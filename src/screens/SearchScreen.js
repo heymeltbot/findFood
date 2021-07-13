@@ -27,7 +27,7 @@ const SearchScreen = ({}) => {
       <ScrollView>
         <ResultsList
           results={filterRestaurantsByPrice("$")}
-          titleText="Broke"
+          titleText="Expensive food? I don't know her"
         ></ResultsList>
         <ResultsList
           results={filterRestaurantsByPrice("$$")}
@@ -42,6 +42,11 @@ const SearchScreen = ({}) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  resultsStyle: {
+    fontFamily: "Lobster",
+    fontWeight: "700",
+  },
+});
 
 export default SearchScreen;
